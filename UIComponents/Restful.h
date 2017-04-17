@@ -12,5 +12,7 @@
 @interface Restful : NSObject
 
 + (void)handleApiWithUrlString:(NSString *)urlString completionWithError:(void (^) (BOOL error))completionWithError;
++ (void)getApiWithUrlString:(NSString *)urlString andParams:(NSMutableDictionary *)params completeWithErrorAndResult:(void (^) (BOOL error, NSDictionary *result))completionWithErrorAndResul;
++ (void)postApiWithUrlString:(NSString *)urlString andParams:(NSMutableDictionary *)params completeWithErrorAndResult:(void (^) (BOOL error, NSDictionary *result))completionWithErrorAndResul;
 
 @end

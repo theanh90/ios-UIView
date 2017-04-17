@@ -18,17 +18,54 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self testRequestApi];
+//    [self testRequestApi];
+    [self getRestful];
+    [self postRestful];
+}
+
+- (void)getRestful {
+    NSString  *urlString = @"http://echo.jsontest.com/version/0.0.1/user/master/role/admin/method/get";
+    NSMutableDictionary *params = [NSMutableDictionary new];
+    [params setObject:@"" forKey:@""];
+    
+    [Restful getApiWithUrlString:urlString andParams:params completeWithErrorAndResult:^(BOOL error, NSDictionary *response) {
+        if (error) {
+            NSLog(@"get API from Restful ERROR ");
+        } else {
+            NSLog(@"get API from Restful SUCCESS. Result: %@", response);
+        }
+    }];
+    
+    
+}
+
+- (void)postRestful {
+//    NSString  *urlString = @"http://echo.jsontest.com/version/0.0.1/user/master/role/admin/method/get";
+    NSString *urlString = @"https://jsonplaceholder.typicode.com/posts";
+    NSMutableDictionary *params = [NSMutableDictionary new];
+    [params setObject:@"afnetworking" forKey:@"user"];
+    [params setObject:@"test" forKey:@"role"];
+    [params setObject:@"post" forKey:@"method"];
+    
+    [Restful postApiWithUrlString:urlString andParams:params completeWithErrorAndResult:^(BOOL error, NSDictionary *response) {
+        if (error) {
+            NSLog(@"post API from Restful ERROR ");
+        } else {
+            NSLog(@"post API from Restful SUCCESS. Result: %@", response);
+        }
+    }];
+    
+    
 }
 
 - (void)testRequestApi {
-    NSString *urlString = @"http://echo.jsontest.com/version/0.0.1/user/xxxyyy/role/admin";
+    NSString *urlString = @"http://echo.jsontest.com/version/0.0.1/user/master/method/get";
     
     [Restful handleApiWithUrlString:urlString completionWithError:^(BOOL error) {
         if (error) {
-            NSLog(@"Error");
+            NSLog(@"Test request API Error");
         } else {
-            NSLog(@"Success");
+            NSLog(@"Test request API Success");
         }
     }];
 }
