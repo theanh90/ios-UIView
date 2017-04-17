@@ -12,6 +12,7 @@
 #import "CollectionViewController.h"
 #import "PageControllViewController.h"
 #import "ProgressViewController.h"
+#import "AFNetworkingViewController.h"
 
 @interface MainViewController ()
 
@@ -25,7 +26,7 @@ const int SELECTED_SLIDER = 0;
 const int SELECTED_SWITCH = 1;
 const int SELECTED_PROGRESSVIEW = 2;
 const int SELECTED_PAGE_CONTROLL = 3;
-const int SELECTED_STACKVIEW = 4;
+const int SELECTED_AFNETWORKING = 4;
 const int SELECTED_IMAGEVIEW = 5;
 const int SELECTED_COLLECTION_VIEW = 6;
 
@@ -39,7 +40,7 @@ const int SELECTED_COLLECTION_VIEW = 6;
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableData = [NSArray arrayWithObjects:@"Slider", @"Switch & Activity", @"Progress View", @"Page control", @"StackView", @"ImageView", @"Collection View", nil];
+    self.tableData = [NSArray arrayWithObjects:@"Slider", @"Switch & Activity", @"Progress View", @"Page control", @"AFNetworking", @"ImageView", @"Collection View", nil];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -68,9 +69,11 @@ const int SELECTED_COLLECTION_VIEW = 6;
             }];
             break;
         }
-        case SELECTED_STACKVIEW:
-            NSLog(@"StackView");
+        case SELECTED_AFNETWORKING: {
+            AFNetworkingViewController *view = [[AFNetworkingViewController alloc] initWithNibName:@"AFNetworkingViewController" bundle:nil];
+            [self.navigationController pushViewController:view animated:YES];
             break;
+        }
         case SELECTED_IMAGEVIEW:
             NSLog(@"ImageView");
             break;

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2FE263599E3797B57F259E /* libPods-UIComponents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932F6E547DBDC6582AE7369 /* libPods-UIComponents.a */; };
+		AF2855481EA4802C0004C4E1 /* Restful.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2855471EA4802C0004C4E1 /* Restful.m */; };
+		AF28554C1EA4A92C0004C4E1 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF28554A1EA4A92C0004C4E1 /* AFNetworkingViewController.m */; };
+		AF28554D1EA4A92C0004C4E1 /* AFNetworkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF28554B1EA4A92C0004C4E1 /* AFNetworkingViewController.xib */; };
 		AF35D8971E9E12A0000F9AA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF35D8961E9E12A0000F9AA1 /* main.m */; };
 		AF35D89A1E9E12A0000F9AA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF35D8991E9E12A0000F9AA1 /* AppDelegate.m */; };
 		AF35D8A01E9E12A0000F9AA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF35D89E1E9E12A0000F9AA1 /* Main.storyboard */; };
@@ -32,6 +36,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5932F6E547DBDC6582AE7369 /* libPods-UIComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIComponents.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2855461EA4802C0004C4E1 /* Restful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restful.h; sourceTree = "<group>"; };
+		AF2855471EA4802C0004C4E1 /* Restful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restful.m; sourceTree = "<group>"; };
+		AF2855491EA4A92C0004C4E1 /* AFNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
+		AF28554A1EA4A92C0004C4E1 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
+		AF28554B1EA4A92C0004C4E1 /* AFNetworkingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AFNetworkingViewController.xib; sourceTree = "<group>"; };
 		AF35D8921E9E12A0000F9AA1 /* UIComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF35D8961E9E12A0000F9AA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF35D8981E9E12A0000F9AA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,6 +75,8 @@
 		AF7E1BD61E9F359600D7B4C3 /* NibCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibCell.h; sourceTree = "<group>"; };
 		AF7E1BD71E9F359600D7B4C3 /* NibCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NibCell.m; sourceTree = "<group>"; };
 		AF7E1BD81E9F359600D7B4C3 /* NibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibCell.xib; sourceTree = "<group>"; };
+		B74198D5733964E0899E4CD0 /* Pods-UIComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIComponents/Pods-UIComponents.debug.xcconfig"; sourceTree = "<group>"; };
+		C399BC5F4600136736883D54 /* Pods-UIComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIComponents/Pods-UIComponents.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,17 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2FE263599E3797B57F259E /* libPods-UIComponents.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03E08904931D6D95804222C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5932F6E547DBDC6582AE7369 /* libPods-UIComponents.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF2855451EA480110004C4E1 /* Restful */ = {
+			isa = PBXGroup;
+			children = (
+				AF2855461EA4802C0004C4E1 /* Restful.h */,
+				AF2855471EA4802C0004C4E1 /* Restful.m */,
+			);
+			name = Restful;
+			sourceTree = "<group>";
+		};
 		AF35D8891E9E12A0000F9AA1 = {
 			isa = PBXGroup;
 			children = (
 				AF35D8941E9E12A0000F9AA1 /* UIComponents */,
 				AF35D8931E9E12A0000F9AA1 /* Products */,
+				E301816065FFEA23042A755F /* Pods */,
+				03E08904931D6D95804222C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +129,7 @@
 		AF35D8941E9E12A0000F9AA1 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				AF2855451EA480110004C4E1 /* Restful */,
 				AF4708291EA0ACBA006B9D7A /* SubPageCtrView */,
 				AF7E1BD51E9F356900D7B4C3 /* CollectionCell */,
 				AF35D8B51E9E12D7000F9AA1 /* ViewCtr */,
@@ -125,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				AF35D8B81E9E2AA0000F9AA1 /* SliderViewController.xib */,
+				AF28554B1EA4A92C0004C4E1 /* AFNetworkingViewController.xib */,
 				AF4708261EA084DC006B9D7A /* PageControllViewController.xib */,
 				AF35D8BD1E9E36DB000F9AA1 /* SwitchViewController.xib */,
 				AF4708311EA0BE37006B9D7A /* ProgressViewController.xib */,
@@ -149,6 +183,8 @@
 				AF4708251EA084DC006B9D7A /* PageControllViewController.m */,
 				AF47082F1EA0BE37006B9D7A /* ProgressViewController.h */,
 				AF4708301EA0BE37006B9D7A /* ProgressViewController.m */,
+				AF2855491EA4A92C0004C4E1 /* AFNetworkingViewController.h */,
+				AF28554A1EA4A92C0004C4E1 /* AFNetworkingViewController.m */,
 			);
 			name = ViewCtr;
 			sourceTree = "<group>";
@@ -173,6 +209,15 @@
 			name = CollectionCell;
 			sourceTree = "<group>";
 		};
+		E301816065FFEA23042A755F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B74198D5733964E0899E4CD0 /* Pods-UIComponents.debug.xcconfig */,
+				C399BC5F4600136736883D54 /* Pods-UIComponents.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF35D8AC1E9E12A0000F9AA1 /* Build configuration list for PBXNativeTarget "UIComponents" */;
 			buildPhases = (
+				C32266696E115A4BD89BCAF4 /* [CP] Check Pods Manifest.lock */,
 				AF35D88E1E9E12A0000F9AA1 /* Sources */,
 				AF35D88F1E9E12A0000F9AA1 /* Frameworks */,
 				AF35D8901E9E12A0000F9AA1 /* Resources */,
+				292263F483DF4D8ABDE04493 /* [CP] Embed Pods Frameworks */,
+				B881A3FE23D85BEE2E12562F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,12 +288,61 @@
 				AF35D8BA1E9E2AA0000F9AA1 /* SliderViewController.xib in Resources */,
 				AF4708331EA0BE37006B9D7A /* ProgressViewController.xib in Resources */,
 				AF7E1BDA1E9F359600D7B4C3 /* NibCell.xib in Resources */,
+				AF28554D1EA4A92C0004C4E1 /* AFNetworkingViewController.xib in Resources */,
 				AF35D8A01E9E12A0000F9AA1 /* Main.storyboard in Resources */,
 				AF35D8B41E9E12CD000F9AA1 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		292263F483DF4D8ABDE04493 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIComponents/Pods-UIComponents-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B881A3FE23D85BEE2E12562F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIComponents/Pods-UIComponents-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C32266696E115A4BD89BCAF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF35D88E1E9E12A0000F9AA1 /* Sources */ = {
@@ -254,9 +351,11 @@
 			files = (
 				AF47082D1EA0AD4C006B9D7A /* SubPageCtrViewController.m in Sources */,
 				AF35D8B91E9E2AA0000F9AA1 /* SliderViewController.m in Sources */,
+				AF28554C1EA4A92C0004C4E1 /* AFNetworkingViewController.m in Sources */,
 				AF7E1BD31E9F1EB000D7B4C3 /* CollectionViewController.m in Sources */,
 				AF4708321EA0BE37006B9D7A /* ProgressViewController.m in Sources */,
 				AF35D8A31E9E12A0000F9AA1 /* UIComponents.xcdatamodeld in Sources */,
+				AF2855481EA4802C0004C4E1 /* Restful.m in Sources */,
 				AF35D89A1E9E12A0000F9AA1 /* AppDelegate.m in Sources */,
 				AF35D8971E9E12A0000F9AA1 /* main.m in Sources */,
 				AF7E1BD91E9F359600D7B4C3 /* NibCell.m in Sources */,
@@ -380,6 +479,7 @@
 		};
 		AF35D8AD1E9E12A0000F9AA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B74198D5733964E0899E4CD0 /* Pods-UIComponents.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -393,6 +493,7 @@
 		};
 		AF35D8AE1E9E12A0000F9AA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C399BC5F4600136736883D54 /* Pods-UIComponents.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
