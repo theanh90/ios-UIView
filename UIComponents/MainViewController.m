@@ -13,6 +13,7 @@
 #import "PageControllViewController.h"
 #import "ProgressViewController.h"
 #import "AFNetworkingViewController.h"
+#import "SimpleGameViewController.h"
 
 @interface MainViewController ()
 
@@ -27,7 +28,7 @@ const int SELECTED_SWITCH = 1;
 const int SELECTED_PROGRESSVIEW = 2;
 const int SELECTED_PAGE_CONTROLL = 3;
 const int SELECTED_AFNETWORKING = 4;
-const int SELECTED_IMAGEVIEW = 5;
+const int SELECTED_SIMPLEGAME = 5;
 const int SELECTED_COLLECTION_VIEW = 6;
 
 
@@ -40,7 +41,7 @@ const int SELECTED_COLLECTION_VIEW = 6;
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableData = [NSArray arrayWithObjects:@"Slider", @"Switch & Activity", @"Progress View", @"Page control", @"AFNetworking", @"ImageView", @"Collection View", nil];
+    self.tableData = [NSArray arrayWithObjects:@"Slider", @"Switch & Activity", @"Progress View", @"Page control", @"AFNetworking", @"Simple Game", @"Collection View", nil];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -74,9 +75,11 @@ const int SELECTED_COLLECTION_VIEW = 6;
             [self.navigationController pushViewController:view animated:YES];
             break;
         }
-        case SELECTED_IMAGEVIEW:
-            NSLog(@"ImageView");
+        case SELECTED_SIMPLEGAME: {
+            SimpleGameViewController *view = [[SimpleGameViewController alloc] initWithNibName:@"SimpleGameViewController" bundle:nil];
+            [self.navigationController pushViewController:view animated:YES];
             break;
+        }
         case SELECTED_COLLECTION_VIEW: {
             CollectionViewController *collecView = [[CollectionViewController alloc] initWithNibName:@"CollectionViewController" bundle:nil];
             [self.navigationController pushViewController:collecView animated:YES];

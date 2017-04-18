@@ -23,6 +23,8 @@
 		AF35D8BA1E9E2AA0000F9AA1 /* SliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF35D8B81E9E2AA0000F9AA1 /* SliderViewController.xib */; };
 		AF35D8BE1E9E36DB000F9AA1 /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF35D8BC1E9E36DB000F9AA1 /* SwitchViewController.m */; };
 		AF35D8BF1E9E36DB000F9AA1 /* SwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF35D8BD1E9E36DB000F9AA1 /* SwitchViewController.xib */; };
+		AF402A5A1EA5CF8300D46F00 /* SimpleGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF402A581EA5CF8300D46F00 /* SimpleGameViewController.m */; };
+		AF402A5B1EA5CF8300D46F00 /* SimpleGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF402A591EA5CF8300D46F00 /* SimpleGameViewController.xib */; };
 		AF4708271EA084DC006B9D7A /* PageControllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4708251EA084DC006B9D7A /* PageControllViewController.m */; };
 		AF4708281EA084DC006B9D7A /* PageControllViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4708261EA084DC006B9D7A /* PageControllViewController.xib */; };
 		AF47082D1EA0AD4C006B9D7A /* SubPageCtrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF47082B1EA0AD4C006B9D7A /* SubPageCtrViewController.m */; };
@@ -60,6 +62,9 @@
 		AF35D8BB1E9E36DB000F9AA1 /* SwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
 		AF35D8BC1E9E36DB000F9AA1 /* SwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
 		AF35D8BD1E9E36DB000F9AA1 /* SwitchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchViewController.xib; sourceTree = "<group>"; };
+		AF402A571EA5CF8300D46F00 /* SimpleGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleGameViewController.h; sourceTree = "<group>"; };
+		AF402A581EA5CF8300D46F00 /* SimpleGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleGameViewController.m; sourceTree = "<group>"; };
+		AF402A591EA5CF8300D46F00 /* SimpleGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleGameViewController.xib; sourceTree = "<group>"; };
 		AF4708241EA084DC006B9D7A /* PageControllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageControllViewController.h; sourceTree = "<group>"; };
 		AF4708251EA084DC006B9D7A /* PageControllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageControllViewController.m; sourceTree = "<group>"; };
 		AF4708261EA084DC006B9D7A /* PageControllViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageControllViewController.xib; sourceTree = "<group>"; };
@@ -159,6 +164,7 @@
 			children = (
 				AF35D8B81E9E2AA0000F9AA1 /* SliderViewController.xib */,
 				AF28554B1EA4A92C0004C4E1 /* AFNetworkingViewController.xib */,
+				AF402A591EA5CF8300D46F00 /* SimpleGameViewController.xib */,
 				AF4708261EA084DC006B9D7A /* PageControllViewController.xib */,
 				AF35D8BD1E9E36DB000F9AA1 /* SwitchViewController.xib */,
 				AF4708311EA0BE37006B9D7A /* ProgressViewController.xib */,
@@ -175,6 +181,8 @@
 				AF35D8B71E9E2AA0000F9AA1 /* SliderViewController.m */,
 				AF35D8BB1E9E36DB000F9AA1 /* SwitchViewController.h */,
 				AF35D8BC1E9E36DB000F9AA1 /* SwitchViewController.m */,
+				AF402A571EA5CF8300D46F00 /* SimpleGameViewController.h */,
+				AF402A581EA5CF8300D46F00 /* SimpleGameViewController.m */,
 				AF35D8B01E9E12CD000F9AA1 /* MainViewController.h */,
 				AF35D8B11E9E12CD000F9AA1 /* MainViewController.m */,
 				AF7E1BD01E9F1EB000D7B4C3 /* CollectionViewController.h */,
@@ -288,6 +296,7 @@
 				AF35D8BA1E9E2AA0000F9AA1 /* SliderViewController.xib in Resources */,
 				AF4708331EA0BE37006B9D7A /* ProgressViewController.xib in Resources */,
 				AF7E1BDA1E9F359600D7B4C3 /* NibCell.xib in Resources */,
+				AF402A5B1EA5CF8300D46F00 /* SimpleGameViewController.xib in Resources */,
 				AF28554D1EA4A92C0004C4E1 /* AFNetworkingViewController.xib in Resources */,
 				AF35D8A01E9E12A0000F9AA1 /* Main.storyboard in Resources */,
 				AF35D8B41E9E12CD000F9AA1 /* MainViewController.xib in Resources */,
@@ -357,6 +366,7 @@
 				AF35D8A31E9E12A0000F9AA1 /* UIComponents.xcdatamodeld in Sources */,
 				AF2855481EA4802C0004C4E1 /* Restful.m in Sources */,
 				AF35D89A1E9E12A0000F9AA1 /* AppDelegate.m in Sources */,
+				AF402A5A1EA5CF8300D46F00 /* SimpleGameViewController.m in Sources */,
 				AF35D8971E9E12A0000F9AA1 /* main.m in Sources */,
 				AF7E1BD91E9F359600D7B4C3 /* NibCell.m in Sources */,
 				AF35D8BE1E9E36DB000F9AA1 /* SwitchViewController.m in Sources */,
