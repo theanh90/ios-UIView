@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2A2FE263599E3797B57F259E /* libPods-UIComponents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932F6E547DBDC6582AE7369 /* libPods-UIComponents.a */; };
+		AF281A1F1EA6176300C8C93F /* UIComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF281A1E1EA6176300C8C93F /* UIComponentsTests.m */; };
+		AF281A271EA6177400C8C93F /* TestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = AF281A261EA6177400C8C93F /* TestMain.m */; };
 		AF2855481EA4802C0004C4E1 /* Restful.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2855471EA4802C0004C4E1 /* Restful.m */; };
 		AF28554C1EA4A92C0004C4E1 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF28554A1EA4A92C0004C4E1 /* AFNetworkingViewController.m */; };
 		AF28554D1EA4A92C0004C4E1 /* AFNetworkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF28554B1EA4A92C0004C4E1 /* AFNetworkingViewController.xib */; };
@@ -37,8 +39,22 @@
 		AF7E1BDA1E9F359600D7B4C3 /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF7E1BD81E9F359600D7B4C3 /* NibCell.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AF281A211EA6176300C8C93F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF35D88A1E9E12A0000F9AA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF35D8911E9E12A0000F9AA1;
+			remoteInfo = UIComponents;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		5932F6E547DBDC6582AE7369 /* libPods-UIComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIComponents.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF281A1C1EA6176300C8C93F /* UIComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF281A1E1EA6176300C8C93F /* UIComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIComponentsTests.m; sourceTree = "<group>"; };
+		AF281A201EA6176300C8C93F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF281A261EA6177400C8C93F /* TestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMain.m; sourceTree = "<group>"; };
 		AF2855461EA4802C0004C4E1 /* Restful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restful.h; sourceTree = "<group>"; };
 		AF2855471EA4802C0004C4E1 /* Restful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restful.m; sourceTree = "<group>"; };
 		AF2855491EA4A92C0004C4E1 /* AFNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
@@ -85,6 +101,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AF281A191EA6176300C8C93F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF35D88F1E9E12A0000F9AA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -104,6 +127,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AF281A1D1EA6176300C8C93F /* UIComponentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF281A261EA6177400C8C93F /* TestMain.m */,
+				AF281A1E1EA6176300C8C93F /* UIComponentsTests.m */,
+				AF281A201EA6176300C8C93F /* Info.plist */,
+			);
+			path = UIComponentsTests;
+			sourceTree = "<group>";
+		};
 		AF2855451EA480110004C4E1 /* Restful */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				AF35D8941E9E12A0000F9AA1 /* UIComponents */,
+				AF281A1D1EA6176300C8C93F /* UIComponentsTests */,
 				AF35D8931E9E12A0000F9AA1 /* Products */,
 				E301816065FFEA23042A755F /* Pods */,
 				03E08904931D6D95804222C3 /* Frameworks */,
@@ -127,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				AF35D8921E9E12A0000F9AA1 /* UIComponents.app */,
+				AF281A1C1EA6176300C8C93F /* UIComponentsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,6 +264,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AF281A1B1EA6176300C8C93F /* UIComponentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF281A251EA6176300C8C93F /* Build configuration list for PBXNativeTarget "UIComponentsTests" */;
+			buildPhases = (
+				AF281A181EA6176300C8C93F /* Sources */,
+				AF281A191EA6176300C8C93F /* Frameworks */,
+				AF281A1A1EA6176300C8C93F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF281A221EA6176300C8C93F /* PBXTargetDependency */,
+			);
+			name = UIComponentsTests;
+			productName = UIComponentsTests;
+			productReference = AF281A1C1EA6176300C8C93F /* UIComponentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AF35D8911E9E12A0000F9AA1 /* UIComponents */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF35D8AC1E9E12A0000F9AA1 /* Build configuration list for PBXNativeTarget "UIComponents" */;
@@ -258,6 +311,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = AnhBui;
 				TargetAttributes = {
+					AF281A1B1EA6176300C8C93F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF35D8911E9E12A0000F9AA1;
+					};
 					AF35D8911E9E12A0000F9AA1 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Manual;
@@ -278,11 +336,19 @@
 			projectRoot = "";
 			targets = (
 				AF35D8911E9E12A0000F9AA1 /* UIComponents */,
+				AF281A1B1EA6176300C8C93F /* UIComponentsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AF281A1A1EA6176300C8C93F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF35D8901E9E12A0000F9AA1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,6 +420,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AF281A181EA6176300C8C93F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF281A271EA6177400C8C93F /* TestMain.m in Sources */,
+				AF281A1F1EA6176300C8C93F /* UIComponentsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF35D88E1E9E12A0000F9AA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,6 +452,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AF281A221EA6176300C8C93F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF35D8911E9E12A0000F9AA1 /* UIComponents */;
+			targetProxy = AF281A211EA6176300C8C93F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		AF35D89E1E9E12A0000F9AA1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -397,6 +480,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AF281A231EA6176300C8C93F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UIComponentsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.UIComponentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIComponents.app/UIComponents";
+			};
+			name = Debug;
+		};
+		AF281A241EA6176300C8C93F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UIComponentsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.UIComponentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIComponents.app/UIComponents";
+			};
+			name = Release;
+		};
 		AF35D8AA1E9E12A0000F9AA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -518,6 +625,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AF281A251EA6176300C8C93F /* Build configuration list for PBXNativeTarget "UIComponentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF281A231EA6176300C8C93F /* Debug */,
+				AF281A241EA6176300C8C93F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		AF35D88D1E9E12A0000F9AA1 /* Build configuration list for PBXProject "UIComponents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

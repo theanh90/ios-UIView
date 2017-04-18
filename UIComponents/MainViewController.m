@@ -118,6 +118,10 @@ const int SELECTED_COLLECTION_VIEW = 6;
     return cell;
 }
 
+- (NSInteger)addNumberOne:(NSInteger)first andNumberTwo:(NSInteger)second {
+    return first + second;
+}
+
 /*
 #pragma mark - Navigation
 

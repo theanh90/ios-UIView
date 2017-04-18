@@ -13,6 +13,8 @@
 @property NSArray *tableData;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+- (NSInteger)addNumberOne:(NSInteger)first andNumberTwo:(NSInteger)second;
+
 
 @end
 
