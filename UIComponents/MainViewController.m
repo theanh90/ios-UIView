@@ -14,6 +14,7 @@
 #import "ProgressViewController.h"
 #import "AFNetworkingViewController.h"
 #import "SimpleGameViewController.h"
+#import "LoginFaceViewController.h"
 
 @interface MainViewController ()
 
@@ -30,6 +31,7 @@ const int SELECTED_PAGE_CONTROLL = 3;
 const int SELECTED_AFNETWORKING = 4;
 const int SELECTED_SIMPLEGAME = 5;
 const int SELECTED_COLLECTION_VIEW = 6;
+const int SELECTED_LOGIN_FACEBOOK = 7;
 
 
 - (void)viewDidLoad {
@@ -41,7 +43,7 @@ const int SELECTED_COLLECTION_VIEW = 6;
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableData = [NSArray arrayWithObjects:@"Slider", @"Switch & Activity", @"Progress View", @"Page control", @"AFNetworking", @"Simple Game", @"Collection View", nil];
+    self.tableData = [NSArray arrayWithObjects:@"Slider", @"Switch & Activity", @"Progress View", @"Page control", @"AFNetworking", @"Simple Game", @"Collection View", @"Login Facebook", nil];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -85,6 +87,11 @@ const int SELECTED_COLLECTION_VIEW = 6;
             [self.navigationController pushViewController:collecView animated:YES];
             break;
         }
+        case SELECTED_LOGIN_FACEBOOK: {
+            LoginFaceViewController *view = [[LoginFaceViewController alloc]initWithNibName:@"LoginFaceViewController" bundle:nil];
+            [self.navigationController pushViewController:view animated:true];
+            break;
+        }
             
         default:
             break;
@@ -102,7 +109,7 @@ const int SELECTED_COLLECTION_VIEW = 6;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 7;
+    return [self.tableData count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

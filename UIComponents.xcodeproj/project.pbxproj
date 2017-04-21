@@ -37,6 +37,9 @@
 		AF7E1BD41E9F1EB000D7B4C3 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF7E1BD21E9F1EB000D7B4C3 /* CollectionViewController.xib */; };
 		AF7E1BD91E9F359600D7B4C3 /* NibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7E1BD71E9F359600D7B4C3 /* NibCell.m */; };
 		AF7E1BDA1E9F359600D7B4C3 /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF7E1BD81E9F359600D7B4C3 /* NibCell.xib */; };
+		AF9BA6BE1EA9E35900FA6690 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF9BA6BD1EA9E35900FA6690 /* GoogleService-Info.plist */; };
+		AFAEF2C51EA8A9FC00E3413B /* LoginFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAEF2C31EA8A9FC00E3413B /* LoginFaceViewController.m */; };
+		AFAEF2C61EA8A9FC00E3413B /* LoginFaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFAEF2C41EA8A9FC00E3413B /* LoginFaceViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,10 @@
 		AF7E1BD61E9F359600D7B4C3 /* NibCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibCell.h; sourceTree = "<group>"; };
 		AF7E1BD71E9F359600D7B4C3 /* NibCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NibCell.m; sourceTree = "<group>"; };
 		AF7E1BD81E9F359600D7B4C3 /* NibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibCell.xib; sourceTree = "<group>"; };
+		AF9BA6BD1EA9E35900FA6690 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AFAEF2C21EA8A9FC00E3413B /* LoginFaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginFaceViewController.h; sourceTree = "<group>"; };
+		AFAEF2C31EA8A9FC00E3413B /* LoginFaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginFaceViewController.m; sourceTree = "<group>"; };
+		AFAEF2C41EA8A9FC00E3413B /* LoginFaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginFaceViewController.xib; sourceTree = "<group>"; };
 		B74198D5733964E0899E4CD0 /* Pods-UIComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIComponents/Pods-UIComponents.debug.xcconfig"; sourceTree = "<group>"; };
 		C399BC5F4600136736883D54 /* Pods-UIComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIComponents/Pods-UIComponents.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +176,7 @@
 		AF35D8941E9E12A0000F9AA1 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				AF9BA6BD1EA9E35900FA6690 /* GoogleService-Info.plist */,
 				AF2855451EA480110004C4E1 /* Restful */,
 				AF4708291EA0ACBA006B9D7A /* SubPageCtrView */,
 				AF7E1BD51E9F356900D7B4C3 /* CollectionCell */,
@@ -202,6 +210,7 @@
 				AF402A591EA5CF8300D46F00 /* SimpleGameViewController.xib */,
 				AF4708261EA084DC006B9D7A /* PageControllViewController.xib */,
 				AF35D8BD1E9E36DB000F9AA1 /* SwitchViewController.xib */,
+				AFAEF2C41EA8A9FC00E3413B /* LoginFaceViewController.xib */,
 				AF4708311EA0BE37006B9D7A /* ProgressViewController.xib */,
 				AF7E1BD21E9F1EB000D7B4C3 /* CollectionViewController.xib */,
 				AF35D8B21E9E12CD000F9AA1 /* MainViewController.xib */,
@@ -228,6 +237,8 @@
 				AF4708301EA0BE37006B9D7A /* ProgressViewController.m */,
 				AF2855491EA4A92C0004C4E1 /* AFNetworkingViewController.h */,
 				AF28554A1EA4A92C0004C4E1 /* AFNetworkingViewController.m */,
+				AFAEF2C21EA8A9FC00E3413B /* LoginFaceViewController.h */,
+				AFAEF2C31EA8A9FC00E3413B /* LoginFaceViewController.m */,
 			);
 			name = ViewCtr;
 			sourceTree = "<group>";
@@ -318,7 +329,8 @@
 					};
 					AF35D8911E9E12A0000F9AA1 = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = MN3E9AE5P7;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -355,6 +367,7 @@
 			files = (
 				AF47082E1EA0AD4C006B9D7A /* SubPageCtrViewController.xib in Resources */,
 				AF35D8BF1E9E36DB000F9AA1 /* SwitchViewController.xib in Resources */,
+				AF9BA6BE1EA9E35900FA6690 /* GoogleService-Info.plist in Resources */,
 				AF35D8A81E9E12A0000F9AA1 /* LaunchScreen.storyboard in Resources */,
 				AF7E1BD41E9F1EB000D7B4C3 /* CollectionViewController.xib in Resources */,
 				AF35D8A51E9E12A0000F9AA1 /* Assets.xcassets in Resources */,
@@ -366,6 +379,7 @@
 				AF28554D1EA4A92C0004C4E1 /* AFNetworkingViewController.xib in Resources */,
 				AF35D8A01E9E12A0000F9AA1 /* Main.storyboard in Resources */,
 				AF35D8B41E9E12CD000F9AA1 /* MainViewController.xib in Resources */,
+				AFAEF2C61EA8A9FC00E3413B /* LoginFaceViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +449,7 @@
 			files = (
 				AF47082D1EA0AD4C006B9D7A /* SubPageCtrViewController.m in Sources */,
 				AF35D8B91E9E2AA0000F9AA1 /* SliderViewController.m in Sources */,
+				AFAEF2C51EA8A9FC00E3413B /* LoginFaceViewController.m in Sources */,
 				AF28554C1EA4A92C0004C4E1 /* AFNetworkingViewController.m in Sources */,
 				AF7E1BD31E9F1EB000D7B4C3 /* CollectionViewController.m in Sources */,
 				AF4708321EA0BE37006B9D7A /* ProgressViewController.m in Sources */,
@@ -599,11 +614,13 @@
 			baseConfigurationReference = B74198D5733964E0899E4CD0 /* Pods-UIComponents.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MN3E9AE5P7;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = UIComponents/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.UIComponents;
+				PRODUCT_BUNDLE_IDENTIFIER = org.neo.edu.UIComponents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -613,11 +630,13 @@
 			baseConfigurationReference = C399BC5F4600136736883D54 /* Pods-UIComponents.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MN3E9AE5P7;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = UIComponents/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.UIComponents;
+				PRODUCT_BUNDLE_IDENTIFIER = org.neo.edu.UIComponents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -632,6 +651,7 @@
 				AF281A241EA6176300C8C93F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF35D88D1E9E12A0000F9AA1 /* Build configuration list for PBXProject "UIComponents" */ = {
 			isa = XCConfigurationList;

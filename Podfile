@@ -7,5 +7,12 @@ target 'UIComponents' do
 
   # Pods for UIComponents
   pod 'AFNetworking'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKShareKit'
+  pod 'FBSDKMessengerShareKit'
+  
+  # Google Analytics
+  pod 'Google/Analytics'
 
 end

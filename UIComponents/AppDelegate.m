@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #include "MainViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <Google/Analytics.h>
 
 @interface AppDelegate ()
 
@@ -17,13 +19,40 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // Facebook
+    [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
     MainViewController *view = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:view];
     [self.window setRootViewController:nav];
     
+    // Google
+    // Configure tracker from GoogleService-Info.plist.
+    NSError *configureError;
+    [[GGLContext sharedInstance] configureWithError:&configureError];
+    NSAssert(!configureError, @"Error configuring Google services: %@", configureError);
+    
+    // Optional: configure GAI options.
+    GAI *gai = [GAI sharedInstance];
+    gai.trackUncaughtExceptions = YES;  // report uncaught exceptions
+    gai.logger.logLevel = kGAILogLevelVerbose;  // remove before app release
+    
     return YES;
+}
+
+
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    BOOL handled = [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                                  openURL:url
+                                                        sourceApplication:sourceApplication
+                                                               annotation:annotation
+                    ];
+    // Add any custom logic here.
+    return handled;
 }
 
 
